@@ -1,0 +1,16 @@
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\bin\Debug\net5.0\otherstuff.exe
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\bin\Debug\net5.0\otherstuff.deps.json
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\bin\Debug\net5.0\otherstuff.runtimeconfig.json
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\bin\Debug\net5.0\otherstuff.runtimeconfig.dev.json
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\bin\Debug\net5.0\otherstuff.dll
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\bin\Debug\net5.0\ref\otherstuff.dll
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\bin\Debug\net5.0\otherstuff.pdb
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.csproj.AssemblyReference.cache
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.AssemblyInfoInputs.cache
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.AssemblyInfo.cs
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.csproj.CoreCompileInputs.cache
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.dll
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\ref\otherstuff.dll
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.pdb
+C:\Users\DPCDTI\Documents\Pasta\temp\uri-python\csharp\variables\variables\obj\Debug\net5.0\otherstuff.genruntimeconfig.cache
