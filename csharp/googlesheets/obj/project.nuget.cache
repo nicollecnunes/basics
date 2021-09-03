@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "k6L3dW6YVhiUj0k0UTffjuLV7akPrXSYW4f2/GRV2O1jUTloXByGJMxlHnWVFhe84OZJtn7IbOMfYVZOJPESTg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DPCDTI\\Documents\\Pasta\\basics\\csharp\\googlesheets\\googlesheets.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DPCDTI\\.nuget\\packages\\google.apis\\1.54.0\\google.apis.1.54.0.nupkg.sha512",
+    "C:\\Users\\DPCDTI\\.nuget\\packages\\google.apis.auth\\1.54.0\\google.apis.auth.1.54.0.nupkg.sha512",
+    "C:\\Users\\DPCDTI\\.nuget\\packages\\google.apis.core\\1.54.0\\google.apis.core.1.54.0.nupkg.sha512",
+    "C:\\Users\\DPCDTI\\.nuget\\packages\\google.apis.sheets.v4\\1.54.0.2371\\google.apis.sheets.v4.1.54.0.2371.nupkg.sha512",
+    "C:\\Users\\DPCDTI\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
