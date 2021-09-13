@@ -1,0 +1,14 @@
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.csproj.AssemblyReference.cache
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.AssemblyInfoInputs.cache
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.AssemblyInfo.cs
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.csproj.CoreCompileInputs.cache
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\bin\Debug\netcoreapp3.1\poo.exe
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\bin\Debug\netcoreapp3.1\poo.deps.json
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\bin\Debug\netcoreapp3.1\poo.runtimeconfig.json
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\bin\Debug\netcoreapp3.1\poo.runtimeconfig.dev.json
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\bin\Debug\netcoreapp3.1\poo.dll
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\bin\Debug\netcoreapp3.1\poo.pdb
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.dll
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.pdb
+C:\Users\DPCDTI\Documents\Pasta\basics\csharp\poo\poo\obj\Debug\netcoreapp3.1\poo.genruntimeconfig.cache
