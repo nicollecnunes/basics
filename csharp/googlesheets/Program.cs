@@ -29,7 +29,7 @@ namespace googlesheets
                 ApplicationName = appname,
             });
 
-            deleteEntry();
+            AppendNewLine();
         }
 
         static void read()
@@ -83,6 +83,19 @@ namespace googlesheets
 
             var deleteRequest = service.Spreadsheets.Values.Clear(requestBody, sheet_id, range);
             var deleteResponse = deleteRequest.Execute();
+        }
+
+        static void AppendNewLine()
+        {
+            var range = $"{sheet}!A:F";
+            var valueRange = new ValueRange();
+
+            var oblist = new List<object>() { "upd",  "upd","upd","upd"};
+            valueRange.Values = new List<IList<object>> { oblist };
+
+            var appendRequest = service.Spreadsheets.Values.Append(valueRange, sheet_id, range);
+            appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
+            var appendReponse = appendRequest.Execute();
         }
 
 
