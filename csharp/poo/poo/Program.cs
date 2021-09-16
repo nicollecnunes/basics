@@ -14,6 +14,7 @@ namespace poo
                 { "Membros - Classes e Métodos", Membros.Executar},
                 { "Construtores - Classes e Métodos", Construtores.Executar},
                 { "Desafio - Classes e Métodos", AcessandoAtributo.Executar},
+                { "Enum - Classes e Métodos", ExemploEnum.Executar},
             });
 
             central.SelecionarEExecutar();
