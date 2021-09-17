@@ -5,14 +5,16 @@ using Google.Apis.Sheets.v4;
 using System.Collections.Generic;
 using Google.Apis.Sheets.v4.Data;
 
+
 namespace googlesheets
 {
     class Program
     {
+
         static readonly string[] scopes = {SheetsService.Scope.Spreadsheets};
         static readonly string appname = "teste de planilha"; // qualquer coisa
         static readonly string sheet_id = "1jIkkpUYkoJlBFtMfawmMCHXtEatihjpa43jhooiBK0o"; //vem do link
-        static readonly string sheet = "Geral";
+        static readonly string sheet = "Util";
         static SheetsService service;
         static void Main(string[] args)
         {
@@ -29,12 +31,12 @@ namespace googlesheets
                 ApplicationName = appname,
             });
 
-            AppendNewLine();
+            PeriodoMenorMaior();
         }
 
         static void read()
         {
-            var range = $"{sheet}!A2:D22"; //onde precisamos de acesso
+            var range = $"{sheet}!B2"; //onde precisamos de acesso
             var request = service.Spreadsheets.Values.Get(sheet_id, range);
 
             var response = request.Execute(); //faz a request e recebe o retorno
@@ -42,20 +44,43 @@ namespace googlesheets
 
             if (values != null && values.Count>0) //checando se obtivemos valores validos
             {
-                Console.WriteLine("Entrada \t Nome \t\t\t\t\t Setor \t\t\t\t Padrinho \t");
                 foreach (var row in values) //vai percorrer as linhas dos valores
                 {
-                    Console.WriteLine("{0} \t {1} \t\t\t\t\t {2} \t\t\t {3} \t", row[0], row[1], row[2], row[3]); //[x] = coluna x
+                    if (row[0].ToString() == "-")
+                    {
+                        Console.WriteLine("vazio :)");
+                    }else{
+                        Console.WriteLine("{0}", row[0]); //[x] = coluna x
+                    }
+                    
                 }
             }
         }
 
+        static string readReturn(string InputRange)
+        {
+            var range = $"{sheet}!{InputRange}"; //onde precisamos de acesso
+            var request = service.Spreadsheets.Values.Get(sheet_id, range);
+
+            var response = request.Execute(); //faz a request e recebe o retorno
+            var values = response.Values; //pega os valores obtidos
+
+            if (values != null && values.Count>0) //checando se obtivemos valores validos
+            {
+                foreach (var row in values) //vai percorrer as linhas dos valores
+                {
+                    return row[0].ToString(); 
+                }
+            }
+            return "error";
+        }
+
         static void createEntry()
         {
-            var range = $"{sheet}!A:F";
+            var range = $"{sheet}!B2";
             var valueRange = new ValueRange();
 
-            var oblist = new List<object>() { "Hello!", "This", "was", "insertd", "via", "C#" };
+            var oblist = new List<object>() {DateTime.Now};
             valueRange.Values = new List<IList<object>> { oblist };
 
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, sheet_id, range);
@@ -65,10 +90,10 @@ namespace googlesheets
 
         static void updateEntry()
         {
-            var range = $"{sheet}!D3";
+            var range = $"{sheet}!B2";
             var valueRange = new ValueRange();
 
-            var oblist = new List<object>() { "insertEd" };
+            var oblist = new List<object>() {DateTime.Now.ToString("dd/MM/yyyy HH:mm")};
             valueRange.Values = new List<IList<object>> { oblist };
 
             var updateRequest = service.Spreadsheets.Values.Update(valueRange, sheet_id, range);
@@ -96,6 +121,23 @@ namespace googlesheets
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, sheet_id, range);
             appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
             var appendReponse = appendRequest.Execute();
+        }
+
+        static void PeriodoMenorMaior()
+        {
+            var r1 = readReturn("B2");
+            var r2 = Convert.ToDateTime(r1).AddDays(30);
+            Console.WriteLine("o valor era {0}, +30 dias = {1}", r1, r2);
+            if (Convert.ToDateTime(r2) < DateTime.Now)
+            {
+                Console.WriteLine("{0} é menor que agora", r1.ToString());
+            }else if (Convert.ToDateTime(r2) > DateTime.Now)
+            {
+                Console.WriteLine("{0} é maior que agora", r1.ToString());
+            }
+            
+            
+
         }
 
 
