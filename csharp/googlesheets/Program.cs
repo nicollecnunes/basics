@@ -14,7 +14,7 @@ namespace googlesheets
         static readonly string[] scopes = {SheetsService.Scope.Spreadsheets};
         static readonly string appname = "teste de planilha"; // qualquer coisa
         static readonly string sheet_id = "1jIkkpUYkoJlBFtMfawmMCHXtEatihjpa43jhooiBK0o"; //vem do link
-        static readonly string sheet = "Util";
+        static readonly string sheet = "Geral";
         static SheetsService service;
         static void Main(string[] args)
         {
@@ -31,33 +31,39 @@ namespace googlesheets
                 ApplicationName = appname,
             });
 
-            PeriodoMenorMaior();
+            AppendNewLine();
         }
 
         static void read()
         {
-            var range = $"{sheet}!B2"; //onde precisamos de acesso
+            var range = $"{sheet}!A2:A8"; //onde precisamos de acesso
             var request = service.Spreadsheets.Values.Get(sheet_id, range);
 
             var response = request.Execute(); //faz a request e recebe o retorno
             var values = response.Values; //pega os valores obtidos
 
+            var count = 2;
+
             if (values != null && values.Count>0) //checando se obtivemos valores validos
             {
-                foreach (var row in values) //vai percorrer as linhas dos valores
+                foreach (var column in values) //vai percorrer as linhas dos valores
                 {
-                    if (row[0].ToString() == "-")
+                    foreach (var row in column)
                     {
-                        Console.WriteLine("vazio :)");
-                    }else{
-                        Console.WriteLine("{0}", row[0]); //[x] = coluna x
+                        if (row.ToString() ==  "nicolle.nunes2")
+                        {
+                            Console.WriteLine("achei {0}, está na linha {1}", row, count);
+                        }
+                        Console.WriteLine("não é {0}, está na linha {1}", row, count);
+                        count = count + 1;
+                        
                     }
                     
                 }
             }
         }
 
-        static string readReturn(string InputRange)
+        static int readReturn(string InputRange)
         {
             var range = $"{sheet}!{InputRange}"; //onde precisamos de acesso
             var request = service.Spreadsheets.Values.Get(sheet_id, range);
@@ -69,10 +75,10 @@ namespace googlesheets
             {
                 foreach (var row in values) //vai percorrer as linhas dos valores
                 {
-                    return row[0].ToString(); 
+                    return Int16.Parse(row[0].ToString()); 
                 }
             }
-            return "error";
+            return 2;
         }
 
         static void createEntry()
@@ -115,7 +121,7 @@ namespace googlesheets
             var range = $"{sheet}!A:F";
             var valueRange = new ValueRange();
 
-            var oblist = new List<object>() { "upd",  "upd","upd","upd"};
+            var oblist = new List<object>() { "nicolffdfd99", "Nico","0","0", "0", "0", "0"};
             valueRange.Values = new List<IList<object>> { oblist };
 
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, sheet_id, range);
@@ -135,9 +141,27 @@ namespace googlesheets
             {
                 Console.WriteLine("{0} é maior que agora", r1.ToString());
             }
-            
-            
 
+        }
+
+        static void AddPontos(int Linha, int Pontos, string Coluna)
+        {
+            var celula = "" + Coluna + Linha;
+            var inicio = readReturn(celula);
+            
+            Console.WriteLine("{0}", celula);
+
+            var range = $"{sheet}!{celula}";
+            var valueRange = new ValueRange();
+
+            inicio = Pontos + inicio;
+            Console.WriteLine("{0}", inicio);
+            var oblist = new List<object>() {inicio};
+            valueRange.Values = new List<IList<object>> { oblist };
+
+            var updateRequest = service.Spreadsheets.Values.Update(valueRange, sheet_id, range);
+            updateRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.UpdateRequest.ValueInputOptionEnum.USERENTERED;
+            var updateReponse = updateRequest.Execute();
         }
 
 
