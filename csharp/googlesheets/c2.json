@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "metamorfose-326216",
+  "private_key_id": "45da6fd84b6846d9580632fcf84cd42d9dc5cb7e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCc8bNzYmV3BQ+Y\nnB/WLDVMGp1AEd7zkq5hjTG0gSpVgKkRY2hjUYKiNK+cfgdxkM5SVN4iixV3H0F3\nDaVmJqfyUgequl3cDb6aq3pKwKP9sf7FilT60P4klIvBGsvSYWrTMm6Ka7eitsl1\nUm+rTwZkg77PZ6Ir9VgMBvhSaNygcxJYHoR4VPKTo0kFgVVH0GIFcmZ0JrO/FJO0\nHWKuX5l1zDoWCeIWR56yV2zFYgndwzvav6JG7BhYf2KI/tJk7qd0/l8OzFPbUoiL\nfCRmRm0T8p64AtWlBGK5lhmqL8OrDjPqOg9FYedYOOU1z1mk5svTaRnCWVihuQCC\nh1XbOi4bAgMBAAECggEAB16sPBdbR2cD7/ko35BM4ml/h+Iu84YoTSlps527JK+5\ngLkHzl4mAcLymikq5VDU93XHxpx8Yg8kLliEM1NOYKksdf5xaON2V2IFCJyaNtAU\ndCdGTU7iGEqnc2Z0OslbUFaWbUaYpXnq5Oj9mHBKDw9GtwuZSHIpc8sh/xCwh5I8\n5l9U61mFdAMJp8MJGTJkaz9AC6AI2+eX8ci7PB0Ozi5ziL7ekE7weqGhzlZx6r0z\n7jZfggjdj57BLFFPV2BYTbanpBU7X1ykpaG3niTanDRogmwb3PF0Fxfp3MP9HMBA\nWOFbmXPj2HNqP1/IcVwtQfMoAf3+jvbNFH1XjrJmdQKBgQDVLtJIZcpY3oMmSELX\nkz0OlwhwZecgsI3tQqRY/xUA1qMcedQLtyMKbne6Ifcu1PbSPLaeIYZrNJgZs2ve\nVQZOuz16I3rQxysLZKF8SQTILkS2GIxB7SIKhipIOicrDM5rN+xmDCgoc1isIrhC\nZ1CCAUQeWxx7nIdhAufHrUIVpQKBgQC8d0OPKJcYL8gc2Y1x1Q9NeNbojG6zIR8j\nxU7cnJeXEBqKW4A4WRycc/H2RRC+5xlNbMPJ12wde2MfJyND3LEuLAK/LODXq2HX\njOQedKTcqt3OGeaaSRkJFq4+mi3KLRaO1K7dGtKSfJ/HtjZXfRah0cb8uMzEppVQ\n3XY1dc1ovwKBgBS2Asnz0a/Gllk+xfepn1HujGxXChhb7r3xLoRS69h0Ac6/a0Fk\nHmxiBRG5QQl0uTH9ogRE34lEx84fZ0hnXECD4loeXk0wPFdUBHhNo8BK9nP2eJHj\nFt6M4Ei6FZoSGW/DNB1J6xDa++9lRB93aBPpSZPlaCP+NgzPunLkuzndAoGAcmtF\nzOgrszdvGnTJ9s4PWE2Ay/ZWTtJRAXqMgktfjQrt0gnzMkKHqESMJaOQoxXSurrJ\nswTiUpPSfdtZAZ4+w3VcxYwNhWI7KI4VAJh4brAdsT7wTcMLPAVVDBS2sAPnqhdd\ngkcCiIS4zJrHKx56Wwvs7wmS5+Dqzgll9tbqOikCgYBF+DVJUUu2ntcZU2BQEkFu\nNwTcNC/+vnGEkYu7iHx+b0h8d7EA0I3UsIxGTofEF5x3owGRp/C+GudM/Jtt/QzW\noDcHvh48Qa4DL1+jOCdJC0snJKmMzZ1yTcfzdS4xlo33cTsmcacvfy55acM8PS5u\nUCVF58ThfuxLrIGnOOUzAg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "metamorfose-geral@metamorfose-326216.iam.gserviceaccount.com",
+  "client_id": "107031534946255984314",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/metamorfose-geral%40metamorfose-326216.iam.gserviceaccount.com"
+}

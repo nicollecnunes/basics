@@ -21,4 +21,3 @@ C:\Users\DPCDTI\Documents\Pasta\basics\csharp\googlesheets\obj\Debug\net5.0\goog
 C:\Users\DPCDTI\Documents\Pasta\basics\csharp\googlesheets\obj\Debug\net5.0\ref\googlesheets.dll
 C:\Users\DPCDTI\Documents\Pasta\basics\csharp\googlesheets\obj\Debug\net5.0\googlesheets.pdb
 C:\Users\DPCDTI\Documents\Pasta\basics\csharp\googlesheets\obj\Debug\net5.0\googlesheets.genruntimeconfig.cache
-C:\Users\DPCDTI\Documents\Pasta\basics\csharp\googlesheets\bin\Debug\net5.0\arquivo.json

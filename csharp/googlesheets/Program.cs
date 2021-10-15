@@ -21,7 +21,7 @@ namespace googlesheets
             GoogleCredential credential;
 
             //vai abrir o arquivo baixado
-            using(var stream = new FileStream("credenciais.json", FileMode.Open, FileAccess.Read)){
+            using(var stream = new FileStream("c2.json", FileMode.Open, FileAccess.Read)){
                 credential = GoogleCredential.FromStream(stream)
                     .CreateScoped(scopes);
             }
@@ -121,8 +121,16 @@ namespace googlesheets
             var range = $"{sheet}!A:F";
             var valueRange = new ValueRange();
 
-            var oblist = new List<object>() { "nicolffdfd99", "Nico","0","0", "0", "0", "0"};
-            valueRange.Values = new List<IList<object>> { oblist };
+            var lista1 = new List<object>()
+            {
+                "teste 123", "teste","1","2", "3", "4", "5"
+            };
+
+            List<IList<object>> lista2 = new ();
+            lista2.Add(lista1);
+            lista2.Add(lista1);
+
+            valueRange.Values = lista2;
 
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, sheet_id, range);
             appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
