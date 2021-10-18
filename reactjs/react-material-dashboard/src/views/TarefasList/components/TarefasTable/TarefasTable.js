@@ -18,6 +18,7 @@ import {
 
 import TimerIcon from '@material-ui/icons/Timer'
 import DoneAllIcon from '@material-ui/icons/DoneAll'
+import DeleteIcon from '@material-ui/icons/Delete'
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -60,6 +61,7 @@ const TarefasTable = props => {
                   <TableCell>Tipo</TableCell>
                   <TableCell>Status</TableCell>
                   <TableCell></TableCell>
+                  <TableCell></TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -74,6 +76,11 @@ const TarefasTable = props => {
                         <TableCell>
                           <IconButton onClick={e => props.alterarStatus(tarefa.id)} color="secondary">
                             {tarefa.done ? (<DoneAllIcon />) : (<TimerIcon />)}
+                          </IconButton>
+                        </TableCell>
+                        <TableCell>
+                          <IconButton onClick={e => props.deletar(tarefa.id)} color="secondary">
+                            <DeleteIcon/>
                           </IconButton>
                         </TableCell>
                       </TableRow>

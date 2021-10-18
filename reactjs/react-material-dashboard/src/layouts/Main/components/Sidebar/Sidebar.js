@@ -53,12 +53,12 @@ const Sidebar = props => {
       title: 'Tarefas',
       href: '/tarefas',
       icon: <FormatListBulleted />
-    }/*,
+    },
     {
       title: 'Login',
       href: '/login',
       icon: <LockOpenIcon/>
-    }*/
+    }
   ];
 
   return (
