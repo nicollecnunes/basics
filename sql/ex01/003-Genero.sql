@@ -1,0 +1,6 @@
+CREATE TABLE Genero (
+    IdGenero INT PRIMARY KEY NOT NULL,
+    Descricao VARCHAR(20) NOT NULL,
+)
+
+SELECT * FROM Genero

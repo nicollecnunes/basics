@@ -1,0 +1,6 @@
+CREATE TABLE Autor (
+    IdAutor INT PRIMARY KEY,
+    NomeAutor VARCHAR(100) NOT NULL,
+)
+
+SELECT * FROM Autor

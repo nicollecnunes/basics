@@ -1,0 +1,4 @@
+ALTER TABLE Livro
+ADD IdGenero INT FOREIGN KEY REFERENCES Genero ( IdGenero ) 
+
+SELECT * FROM Livro
